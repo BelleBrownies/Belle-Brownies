@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belle Brownie</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+  <header>
+    <nav id="navbar">
+      <i class="fa-solid fa-stroopwafel" id="nav_logo">Belle Brownie</i>
+
+      
+
+<ul id="nav_list">
+    <li class="nav-item active"><a href="#home">Início</a></li>
+    <li class="nav-item"><a href="#menu">Cardápio</a></li>
+    <li class="nav-item"><a href="#testimonials">Avaliações</a></li>
+</ul>
+
+
+
+      <a class="btn-default" href="https://api.whatsapp.com/send/?phone=5511920850050&text=Olá+Belle+Brownie%21+Quero+saber+mais+sobre+os+sabores+disponíveis." style="text-decoration: none; color: #1d1d1d;">
+        Peça aqui
+      </a>
+
+      <button id="mobile-btn" aria-label="Abrir Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+
+    <div id="mobile_menu">
+      <ul id="mobile_nav_list">
+        <li class="nav-item"><a href="#home">Início</a></li>
+        <li class="nav-item"><a href="#menu">Cardápio</a></li>
+        <li class="nav-item"><a href="#testimonials">Avaliações</a></li>
+      </ul>
+
+      <a class="btn-default" href="https://api.whatsapp.com/send/?phone=5511920850050&text=Olá+Belle+Brownie%21+Quero+saber+mais+sobre+os+sabores+disponíveis.">
+        Peça aqui
+      </a>
+    </div>
+  </header>
+
+  <main id="content">
+    <section id="home">
+      <div class="shape"></div>
+
+      <div id="cta">
+        <h1 class="title">O sabor que vai até <span>você</span></h1>
+        <p class="description">Transforme seus momentos em doces lembranças com nossos brownies especiais.</p>
+
+        <div id="cta_buttons">
+          <a href="#menu" class="btn-default">Ver Cardápio</a>
+
+          <a href="tel:+5511920850050" id="phone_button" class="btn-default">
+            <i class="fa-solid fa-phone"></i> (11) 92085-0050
+          </a>
+        </div>
+
+        <div class="social-media-buttons">
+          <a href="https://wa.me/5511920850050?text=Olá%20Belle%20Brownie!%20Quero%20saber%20mais%20sobre%20os%20sabores%20disponíveis." aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a href="https://www.instagram.com/_bellebrownie_/" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+
+      <div id="banner">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/055/136/335/small_2x/tower-of-fudgy-chocolate-brownies-free-png.png" alt="Brownies" height="370">
+      </div>
+    </section>
+    
+    <!-- Aqui já inicia a seção do Cardápio -->
+
+
+            <section id="menu">
+                <h2 class="section-title">Cardápio</h2>
+                <h3 class="section-subtitle">Nossos brownies especiais</h3>
+
+                <div class="dishes">
+                    <div class="dish">
+                        <div class="disgh-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <img src="https://www.cozinhatecnica.com/wp-content/uploads/2019/10/brownie.jpg" class="dish-image" alt="Brownie Tradicional">
+
+                        <h3 class="dish-title">
+                            Brownie tradicional
+                        </h3>
+                        <span class="dish-description">
+                            Brownie de chocolate tradicional, macio e com casquinha crocante.
+                        </span>
+
+                        <div class="dish-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+
+                        <div class="dish-price">
+                            <h4>R$10,00</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+
+                        <div class="quantity-container">
+    <button class="decrease btn">-</button>
+    <span class="quantity">0</span>
+    <button class="increase btn">+</button>
+</div>
+
+
+
+
+                        
+                    </div>
+
+                    <div class="dish">
+                        <div class="disgh-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <img src="https://singellobrigadeiro.com.br/wp-content/uploads/2023/04/brownie1.jpg" class="dish-image" alt="Brownie dois amores">
+
+                        <h3 class="dish-title">
+                            Brownie dois amores
+                        </h3>
+                        <span class="dish-description">
+                            Brownie com camada dupla de chocolate branco e ao leite.
+                        </span>
+
+                        <div class="dish-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+
+                        <div class="dish-price">
+                            <h4>R$13,00</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+
+                       <div class="quantity-container">
+    <button class="decrease btn">-</button>
+    <span class="quantity" id="quantidade-1">0</span>
+    <button class="increase btn">+</button>
+</div>
+
+                        
+                    </div>
+
+                    <div class="dish">
+                        <div class="disgh-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <img src="https://helodoces.vteximg.com.br/arquivos/ids/155623-1000-1000/Brownie-com-brigadeiro-.jpg?v=636961269264930000" class="dish-image" alt="Brownie de brigadeiro">
+
+                        <h3 class="dish-title">
+                            Brownie de brigadeiro
+                        </h3>
+                        <span class="dish-description">
+                            Brownie recheado com brigadeiro gourmet cremoso.
+                        </span>
+
+                        <div class="dish-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+
+                        <div class="dish-price">
+                            <h4>R$12,00</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+
+                        <div class="quantity-container">
+    <button class="decrease btn">-</button>
+    <span class="quantity">0</span>
+    <button class="increase btn">+</button>
+</div>
+                        
+                    </div>
+
+                    <div class="dish">
+                        <div class="disgh-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <img src="https://lovenbrownies.com.br/wp-content/uploads/2022/04/IMG_6919-scaled-e1674945314191.jpg" class="dish-image" alt="Brownie de ninho com kinder">
+
+                        <h3 class="dish-title">
+                            Brownie de ninho com kinder
+                        </h3>
+                        <span class="dish-description">
+                           Brownie com recheio de creme de ninho e pedaços de Kinder.
+                        </span>
+
+                        <div class="dish-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+
+                        <div class="dish-price">
+                            <h4>R$16,00</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+
+                         <div class="quantity-container">
+    <button class="decrease btn">-</button>
+    <span class="quantity">0</span>
+    <button class="increase btn">+</button>
+</div>
+                        
+                    </div>
+
+                    <div class="dish">
+                        <div class="disgh-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <img src="https://lh6.googleusercontent.com/proxy/P97cA4te4YeektHY_aFqMAPBBFS44mU1acyyq5I_fFyZOn5HGNKbpfD9EgfNNuWi_fdXAb2VCwWbE_zUShMbera5wLPEAfjqgqiUsTf9Juj4wW4" class="dish-image" alt="Brownie Tradicional">
+
+                        <h3 class="dish-title">
+                            Brownie de ninho
+                        </h3>
+                        <span class="dish-description">
+                            Brownie recheado com creme de leite ninho.
+                        </span>
+                        <div class="dish-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+
+                        <div class="dish-price">
+                            <h4>R$12,00</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button> 
+                        </div>
+
+                     <div class="quantity-container">
+    <button class="decrease btn">-</button>
+    <span class="quantity">0</span>
+    <button class="increase btn">+</button>
+</div>
+
+                        
+                    </div>
+
+                    <div class="dish">
+                        <div class="disgh-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <img src="https://i.ytimg.com/vi/_4lkfbRswpU/maxresdefault.jpg" class="dish-image" alt="Brownie Tradicional">
+
+                        <h3 class="dish-title">
+                            Brownie de ninho com nutela
+                        </h3>
+                        <span class="dish-description">
+                            Brownie recheado com Nutella e camada de leite ninho.
+                        </span>
+
+                        <div class="dish-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>(500+)</span>
+                        </div>
+
+                        <div class="dish-price">
+                            <h4>R$15,00</h4>
+                            <button class="btn-default">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </button>
+                        </div>
+<div class="quantity-container">
+    <button class="decrease btn">-</button>
+    <span class="quantity">0</span>
+    <button class="increase btn">+</button>
+</div>
+
+ 
+                        
+                    </div>
+                    
+                </div>
+            </section>
+
+            <section id="testimonials">
+                <img src="https://github.com/Larissakich/landing-page-food-theme/blob/main/src/images/chef.png?raw=true" id="testimonial_chef"alt="Chef de cozinha">
+
+                <div id="testimonials_content">
+                    <h2 class="section-title">
+                        Depoimentos
+                    </h2>
+                    <h3 class="section-subtitle">
+                        O que os cliente fala sobre nós
+                    </h3>
+
+                    <div id="feedbacks">
+                        <div class="feedback">
+                            <img src="https://github.com/Larissakich/landing-page-food-theme/blob/main/src/images/avatar.png?raw=true" class="feedback-avatar">
+
+                            <div class="feedback-content">
+                                <p>
+                                    Fulana de Tal
+                                    <span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                </p>
+                                <p>
+                                    "Os brownies da Belle Brownie são macios, saborosos e feitos com tanto carinho que derretem na boca!"
+                                </p>
+                            </div>
+                        </div>
+
+                         <div class="feedback">
+                            <img src="https://github.com/Larissakich/landing-page-food-theme/blob/main/src/images/avatar.png?raw=true" class="feedback-avatar">
+
+                            <div class="feedback-content">
+                                <p>
+                                    Fulana de Tal
+                                    <span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                </p>
+                                <p>
+                                    "Os brownies da Belle Brownie têm aquele sabor caseiro de verdade, macios e feitos com tanto carinho que dá pra sentir em cada pedaço."
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <button class="btn-default">
+                        Ver mais avaliações
+                    </button>
+                </div>
+            </section>
+        </main>
+
+         <footer>
+        <img src="https://raw.githubusercontent.com/Larissakich/landing-page-food-theme/8369bd252127cc02bb8e223d6abd4075fa0c6cca/src/images/wave.svg" alt="" style="width: 100%; height: auto;">
+
+        <div id="footer_items">
+            <span id="copyright">
+                &copy 2024 Larissa Kich
+            </span>
+
+            <div class="social-media-buttons">
+                <a href="https://wa.me/5511920850050?text=Olá%20Belle%20Brownie!%20Quero%20saber%20mais%20sobre%20os%20sabores%20disponíveis.
+">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a href="https://www.instagram.com/_bellebrownie_/">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+        <nav id="mobile-menu" style="display: none;">
+    <!-- seus links do menu aqui -->
+    <a href="#">Home</a>
+    <a href="#">Sabores</a>
+    <a href="#">Contato</a>
+</nav>
+
+        <script>
+
+            
+$(document).ready(function() {
+    $('#mobile_btn').on('click', function () {
+        $('#mobile_menu').toggleClass('active');
+        $('#mobile_btn').find('i').toggleClass('fa-x');
+    });
+
+    const sections = $('section');
+    const navItems = $('.nav-item');
+
+    $(window).on('scroll', function () {
+        const header = $('header');
+        const scrollPosition = $(window).scrollTop() - header.outerHeight();
+
+        let activeSectionIndex = 0;
+
+        if (scrollPosition <= 0) {
+            header.css('box-shadow', 'none');
+        } else {
+            header.css('box-shadow', '5px 1px 5px rgba(0, 0, 0, 0.1');
+        }
+
+        sections.each(function(i) {
+            const section = $(this);
+            const sectionTop = section.offset().top - 96;
+            const sectionBottom = sectionTop+ section.outerHeight();
+
+            if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                activeSectionIndex = i;
+                return false;
+            }
+        })
+
+        navItems.removeClass('active');
+        $(navItems[activeSectionIndex]).addClass('active');
+    });
+
+    ScrollReveal().reveal('#cta', {
+        origin: 'left',
+        duration: 2000,
+        distance: '20%'
+    });
+
+    ScrollReveal().reveal('.dish', {
+        origin: 'left',
+        duration: 2000,
+        distance: '20%'
+    });
+
+    ScrollReveal().reveal('#testimonial_chef', {
+        origin: 'left',
+        duration: 1000,
+        distance: '20%'
+    })
+
+    ScrollReveal().reveal('.feedback', {
+        origin: 'right',
+        duration: 1000,
+        distance: '20%'
+    })
+});
+            
+
+$(document).ready(function () {
+    // Aumenta a quantidade
+    $(".increase").click(function () {
+        var quantityElement = $(this).siblings(".quantity"); // Pega o <span> irmão
+        var currentQuantity = parseInt(quantityElement.text());
+        quantityElement.text(currentQuantity + 1); // Aumenta a quantidade
+    });
+
+    // Diminui a quantidade
+    $(".decrease").click(function () {
+        var quantityElement = $(this).siblings(".quantity"); // Pega o <span> irmão
+        var currentQuantity = parseInt(quantityElement.text());
+        if (currentQuantity > 0) {
+            quantityElement.text(currentQuantity - 1); // Diminui a quantidade
+        }
+    });
+});
+
+
+    // Enviar pedido via WhatsApp
+$(".btn-default").click(function () {
+    // Pega o "dish" (brownie) mais próximo do botão clicado
+    var dish = $(this).closest(".dish");
+
+    // Pega o nome do brownie
+    var dishTitle = dish.find(".dish-title").text().trim();
+
+    // Pega a quantidade
+    var quantity = dish.find(".quantity").text().trim();
+
+    // Exibe no console para depuração
+    console.log("Sabor:", dishTitle);
+    console.log("Quantidade:", quantity);
+
+    // Monta a mensagem
+    var mensagem = `Oi, Belle Brownie! Eu vim do site de vocês e estou super interessado(a) em fazer um pedido de ${quantity} unidade(s) do sabor ${dishTitle}. Poderiam me ajudar?`;
+
+    // URL para o WhatsApp
+    var url = "https://wa.me/5511920850050?text=" + encodeURIComponent(mensagem);
+
+    // Abre o WhatsApp
+    window.open(url, '_blank');
+});
+
+         $(document).ready(function () {
+    // Quando o botão de menu for clicado
+    $("#mobile-btn").click(function () {
+        // Alterna a classe 'active' no menu
+        $("#mobile_menu").toggleClass("active");
+    });
+});
+
+
+
+
+
+            
+</script>
+
+        
+
+    </body>
+</html>
